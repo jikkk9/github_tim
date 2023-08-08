@@ -1,4 +1,4 @@
-![프로젝트 실행 화면](./path-to-your-gif.gif)
+![프로젝트 실행 화면][(./path-to-your-gif.gif)](https://mml.pstatic.net/www/mobile/edit/20230807_1095/upload_1691375959721qihCs.gif)
 
 # 프로젝트 이름 (Project Name)
 (아직 정하지 않음)
