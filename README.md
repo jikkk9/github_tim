@@ -1,7 +1,7 @@
 ![프로젝트 실행 화면](https://mml.pstatic.net/www/mobile/edit/20230807_1095/upload_1691375959721qihCs.gif)
 
 # 프로젝트 이름 (Project Name)
-오늘은 고양의 날이라고 합니다
+공유오피스의 대해
 
 ## 프로젝트 소개 (Project Introduction)
 
