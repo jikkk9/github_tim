@@ -1,3 +1,5 @@
+![프로젝트 실행 화면](./path-to-your-gif.gif)
+
 # 프로젝트 이름 (Project Name)
 (아직 정하지 않음)
 
