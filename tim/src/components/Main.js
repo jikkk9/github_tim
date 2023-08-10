@@ -1,8 +1,14 @@
 import React from 'react'
-
-function Main() {
+import MainList from './MainList'
+function Main({ data }) {
   return (
-    <div>Main</div>
+    <>
+      <section className='Main inner'>
+
+        <MainList data={data}></MainList>
+
+      </section>
+    </>
   )
 }
 

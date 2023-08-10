@@ -1,0 +1,58 @@
+let list = [
+  {
+    _id: 1,
+    img: 'retiringroom1.jpg',
+    title: '제목 1',
+    subTitle: '서브 타이틀 1',
+    price: "가격 1",
+    test1: "추가 텍스트1",
+    category: 'retiringroom',
+
+  },
+  {
+    _id: 2,
+    img: 'retiringroom2.jpg',
+    title: '제목 2',
+    subTitle: '서브 타이틀 2',
+    price: "가격 2",
+    test1: "추가 텍스트2",
+    category: 'retiringroom',
+  },
+  {
+    _id: 3,
+    img: 'retiringroom3.jpg',
+    category: 'retiringroom',
+    title: '제목 3',
+    subTitle: '서브 타이틀 3',
+    price: "가격 3",
+    test1: "추가 텍스트3",
+  },
+  {
+    _id: 4,
+    img: 'retiringroom4.jpg',
+    category: 'retiringroom',
+    title: '제목 4',
+    subTitle: '서브 타이틀 4',
+    price: "가격 4",
+    test1: "추가 텍스트4",
+  },
+  {
+    _id: 5,
+    img: 'retiringroom5.jpg',
+    title: '제목 5',
+    subTitle: '서브 타이틀 5',
+    price: "가격 5",
+    test1: "추가 텍스트5",
+    category: 'retiringroom',
+  },
+  {
+    _id: 6,
+    img: 'retiringroom6.jpg',
+    title: '제목 6',
+    subTitle: '서브 타이틀 6',
+    price: "가격 6",
+    test1: "추가 텍스트6",
+    category: 'retiringroom',
+  },
+];
+export default list;
