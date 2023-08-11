@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react' // useEffect 추가
 
 
 
-function Section04_List({ data }) {
+function Section04_List({ data, selectedCategory }) {
+
+  // 이미지에 대한 조건부 스타일
+  const imageStyle = selectedCategory === 'books' ? { objectFit: 'contain' } : {};
+
 
   const [dataList, setDataList] = useState([data]);
   useEffect(() => {
@@ -11,13 +15,13 @@ function Section04_List({ data }) {
 
   return (
     <>
-      <section className=''>
-        <ul className='Section04_List'>
+      <section className='Section04_List'>
+        <ul className='Section04_List_UL'>
           {dataList.map((item) => (
             <li className='list' key={item._id}>
-              <h3>ID : {item.category}</h3>
+              {/* <h3>ID : {item.category}</h3> */}
               <b>
-                <img src={`${process.env.PUBLIC_URL}/img/section04/${item.img} `}></img>
+                <img style={imageStyle} src={`${process.env.PUBLIC_URL}/img/section04/${item.img} `}></img>
               </b>
 
               <h2>{item.title}</h2>
