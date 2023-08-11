@@ -1,27 +1,27 @@
 let list = [
   {
     _id: 1,
-    img: 'retiringroom1.jpg',
+    img: 'books1.jpg',
     title: '제목 1',
     subTitle: '서브 타이틀 1',
     price: "가격 1",
     test1: "추가 텍스트1",
-    category: 'retiringroom',
+    category: 'books',
 
   },
   {
     _id: 2,
-    img: 'retiringroom2.jpg',
+    img: 'meetingroom1.jpg',
     title: '제목 2',
     subTitle: '서브 타이틀 2',
     price: "가격 2",
     test1: "추가 텍스트2",
-    category: 'retiringroom',
+    category: 'meetingroom',
   },
   {
     _id: 3,
-    img: 'retiringroom3.jpg',
-    category: 'retiringroom',
+    img: 'office3.jpg',
+    category: 'office',
     title: '제목 3',
     subTitle: '서브 타이틀 3',
     price: "가격 3",

@@ -1,0 +1,58 @@
+.Section04_List {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Section04_List li {
+  width: 250px;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+
+
+}
+
+.Section04_List li b {
+  width: 250px;
+}
+
+.Section04_List li:hover img {
+  cursor: pointer;
+
+  transition: 0.5s;
+
+}
+
+
+.Section04_List img {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+
+.Section04_List h2 {
+  padding: 0.5rem 0;
+  font-size: 17px;
+  font-weight: 600;
+
+}
+
+.Section04_List div {
+  display: flex;
+
+}
+
+.Section04_List div p {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.3rem;
+
+}
+
+.Section04_List div p:nth-of-type(1) {
+  background-color: red;
+  color: #fff;
+
+}

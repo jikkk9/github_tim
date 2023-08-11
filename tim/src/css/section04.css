@@ -1,0 +1,39 @@
+.Section04 {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Section04 .left {
+  width: 40%;
+  border: 1px solid #ddd;
+  text-align: center;
+
+}
+
+.Section04 .left div {
+  display: flex;
+  justify-content: center;
+}
+
+.Section04 .left li {
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.Section04 .right {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.Section04 div {}
+
+
+
+/*  
+
+1920px
+1000px
+320px
+
+*/
