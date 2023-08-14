@@ -2,6 +2,7 @@
 
   display: flex;
   justify-content: space-between;
+  position: relative;
 
 }
 
@@ -11,7 +12,7 @@
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  position: relative;
+  /* position: relative; */
 
 }
 
@@ -108,6 +109,8 @@ select::-ms-expand {
 .Section04 .right_p {
   display: flex;
   justify-content: right;
+  margin: 10rem 0;
+  cursor: pointer;
 }
 
 .Section04 .right span {
@@ -124,7 +127,7 @@ select::-ms-expand {
   }
 
   to {
-    left: 70%;
+    left: 20%;
     /* 원하는 최종 위치로 조정 가능합니다. */
   }
 }
@@ -142,8 +145,27 @@ select::-ms-expand {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    position: relative;
+    /* position: relative; */
 
+  }
+
+  .Section04 .left span {
+    bottom: 30%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    z-index: -99;
+    /* display: none; */
+  }
+
+  @keyframes moveRight {
+    from {
+      left: 60%;
+    }
+
+    to {
+      left: 70%;
+      /* 원하는 최종 위치로 조정 가능합니다. */
+    }
   }
 }
 
@@ -167,16 +189,61 @@ select::-ms-expand {
   .Section04_List_UL {}
 
   .Section04 .left span {
-    bottom: -411%;
+    top: 75%;
     left: 11%;
     transform: translate(-50%, -50%);
     z-index: -99;
-    display: none;
+    /* display: none; */
+  }
+
+  @keyframes moveRight {
+    from {
+      left: 60%;
+    }
+
+    to {
+      left: 70%;
+      /* 원하는 최종 위치로 조정 가능합니다. */
+    }
   }
 
 
 
+
 }
+
+@media (max-width: 500px) {
+  .Section04_List_UL {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 100%; */
+  }
+
+
+
+  .Section04 .left span {
+    top: 86%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    z-index: -99;
+    /* display: none; */
+  }
+
+  @keyframes moveRight {
+    from {
+      left: 60%;
+    }
+
+    to {
+      left: 70%;
+      /* 원하는 최종 위치로 조정 가능합니다. */
+    }
+  }
+
+
+}
+
 
 
 

@@ -60,6 +60,7 @@ function Section04({ data }) {
         <span>
           <img src={`${process.env.PUBLIC_URL}/img/section04_img/bg.png`}></img>
         </span>
+
       </div>
       <div className='right'>
         <Section04_List data={dataList} selectedCategory={selectedCategory} />
@@ -68,6 +69,7 @@ function Section04({ data }) {
 
         </p>
       </div>
+
     </div>
   );
 }
