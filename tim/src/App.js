@@ -4,6 +4,7 @@ import "./css/section04.css";
 import "./css/section04_List.css";
 import "./css/section05.css";
 import "./css/section03.css";
+import "./css/section06.css";
 
 import {
   Routes,
@@ -23,6 +24,7 @@ import { useState } from "react";
 import Section04 from "./components/Section04";
 import Section02 from "./components/Section02";
 import Section05 from "./components/Section05";
+import Section06 from "./components/Section06";
 import Section01 from "./components/Section01";
 import Section03 from "./components/Section03";
 
@@ -50,6 +52,9 @@ function App() {
           element={<CombinedSections data05={data05} data={data} />}
         ></Route>
       </Routes>
+      <Section06>
+
+      </Section06>
 
       <Footer />
     </div>
