@@ -58,12 +58,73 @@ img.gifImage {
   display: block;
 }
 
-@keyframes waveImage {
+@keyframes slide {
   0% {
-    background-position-x: 0;
+    transform: translateX(0);
   }
 
   100% {
-    background-position-x: -100%;
+    transform: translateX(-50%);
   }
+}
+
+.wave-container {
+  /* width: 500px; */
+  /* 예: 500px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.wave {
+  display: flex;
+  width: 200%;
+  /* 두 개의 이미지를 가로로 나란히 배치 */
+  animation: slide 30s linear infinite;
+}
+
+.wave2 {
+  margin-left: -6%;
+}
+
+.wave img {
+  width: 50%;
+}
+
+@media (max-width: 1300px) {
+
+  .Section05 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    /* 4개의 동일한 너비의 열을 생성합니다. */
+    gap: 20px;
+    /* 그리드 아이템 간의 간격을 설정합니다. */
+    margin-bottom: 10rem;
+  }
+
+  .Section05>div {
+    /* 각 아이템의 스타일을 여기에 작성할 수 있습니다. */
+    display: flex;
+    flex-direction: column;
+    /* 수직 방향으로 아이템을 쌓습니다. */
+    align-items: center;
+    /* 중앙 정렬을 위한 설정입니다. */
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .Section05 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    /* 4개의 동일한 너비의 열을 생성합니다. */
+    gap: 20px;
+    /* 그리드 아이템 간의 간격을 설정합니다. */
+    margin-bottom: 10rem;
+  }
+
+
 }

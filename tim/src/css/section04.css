@@ -171,7 +171,7 @@ select::-ms-expand {
     left: 11%;
     transform: translate(-50%, -50%);
     z-index: -99;
-
+    display: none;
   }
 
 
