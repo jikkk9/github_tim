@@ -1,0 +1,69 @@
+.Section05_H2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 5rem;
+
+}
+
+.Section05_H2 b {
+  position: relative;
+}
+
+.Section05_H2 b::before {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 4px solid #73ADFF;
+  width: 100%;
+}
+
+.Section05 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4개의 동일한 너비의 열을 생성합니다. */
+  gap: 20px;
+  /* 그리드 아이템 간의 간격을 설정합니다. */
+  margin-bottom: 10rem;
+}
+
+.Section05>div {
+  /* 각 아이템의 스타일을 여기에 작성할 수 있습니다. */
+  display: flex;
+  flex-direction: column;
+  /* 수직 방향으로 아이템을 쌓습니다. */
+  align-items: center;
+  /* 중앙 정렬을 위한 설정입니다. */
+  cursor: pointer;
+}
+
+.Section05 img {
+  width: 100%;
+  /* 이미지의 너비를 조절하거나 다른 스타일을 적용할 수 있습니다. */
+  max-width: 110px;
+  /* 이미지의 최대 너비를 설정합니다. */
+}
+
+img.gifImage {
+  display: none;
+}
+
+.Section05 div:hover img.staticImage {
+  display: none;
+}
+
+.Section05 div:hover img.gifImage {
+  display: block;
+}
+
+@keyframes waveImage {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -100%;
+  }
+}
