@@ -3,6 +3,7 @@ import "./css/reset.css";
 import "./css/section04.css";
 import "./css/section04_List.css";
 import "./css/section05.css";
+import "./css/section03.css";
 
 import {
   Routes,
@@ -23,6 +24,7 @@ import Section04 from "./components/Section04";
 import Section02 from "./components/Section02";
 import Section05 from "./components/Section05";
 import Section01 from "./components/Section01";
+import Section03 from "./components/Section03";
 
 function CombinedSections({ data, data05 }) {
   return (
@@ -41,6 +43,7 @@ function App() {
       <Header title="Header" />
       <Section01></Section01>
       <Section02></Section02>
+      <Section03></Section03>
       <Routes>
         <Route
           path="/"
