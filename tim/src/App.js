@@ -5,6 +5,8 @@ import "./css/section04_List.css";
 import "./css/section05.css";
 import "./css/section03.css";
 import "./css/section06.css";
+import "./css/section07.css";
+import "./css/footer.css";
 
 import {
   Routes,
@@ -21,12 +23,13 @@ import Footer from "./components/Footer";
 import retiringroom from "./data/retiringroom";
 import section05Data from "./data/section05Data";
 import { useState } from "react";
-import Section04 from "./components/Section04";
+import Section01 from "./components/Section01";
 import Section02 from "./components/Section02";
+import Section03 from "./components/Section03";
+import Section04 from "./components/Section04";
 import Section05 from "./components/Section05";
 import Section06 from "./components/Section06";
-import Section01 from "./components/Section01";
-import Section03 from "./components/Section03";
+import Section07 from "./components/Section07";
 
 function CombinedSections({ data, data05 }) {
   return (
@@ -52,9 +55,8 @@ function App() {
           element={<CombinedSections data05={data05} data={data} />}
         ></Route>
       </Routes>
-      <Section06>
-
-      </Section06>
+      <Section06></Section06>
+      <Section07></Section07>
 
       <Footer />
     </div>

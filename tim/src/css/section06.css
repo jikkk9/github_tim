@@ -1,12 +1,14 @@
 .Section06 {
   display: flex;
   height: 600px;
+  align-items: center
 }
 
 .Section06 .content {
   width: 50%;
   text-align: center;
-  font-size: 40px
+  font-size: 40px;
+  position: relative;
 }
 
 
@@ -48,20 +50,30 @@
   /* 스크롤바 핸들의 배경색을 설정 (선택사항) */
 }
 
-.swiper-horizontal>.swiper-scrollbar,
-.swiper-scrollbar.swiper-scrollbar-horizontal {
-  position: absolute;
-  left: var(--swiper-scrollbar-sides-offset, 1%);
-  bottom: var(--swiper-scrollbar-bottom, 7px);
-  top: var(--swiper-scrollbar-top, auto);
-  z-index: 50;
-  height: var(--swiper-scrollbar-size, 4px);
-  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+.swiper_Box {
+  position: relative;
+  width: 200px;
+  margin: 5rem auto;
 }
 
-.Section06 .swiper-button-next,
-.Section06 .swiper-button-prev {
-  background: #000;
-  width: 25px;
-  height: 25px;
+@media (max-width: 1300px) {
+  .Section06 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Section06 .content {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .Section06 .content h2 {
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .swiperContainer {}
 }
+
+@media (max-width: 1000px) {}

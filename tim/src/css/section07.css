@@ -1,0 +1,78 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos1,
+.logos2,
+.logos3 {
+  overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos1:before,
+.logos1:after,
+.logos2:before,
+.logos2:after,
+.logos3:before,
+.logos3:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos1:before,
+.logos2:before,
+.logos3:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+
+}
+
+.logos1:after,
+.logos2:after,
+.logos3:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+
+}
+
+/* .logos1:hover .logos-slide,
+  .logos2:hover .logos-slide,
+  .logos3:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+
+.logos-slide1 {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+.logos-slide2 {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+.logos-slide3 {
+  display: inline-block;
+  animation: 50s slide infinite linear;
+}
+
+
+.logos-slide1 img,
+.logos-slide2 img,
+.logos-slide3 img {
+  height: 100px;
+  margin: 0 40px;
+}
