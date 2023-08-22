@@ -1,0 +1,71 @@
+.Footer {
+  /* display: none; */
+}
+
+.NaverMap {
+
+  display: flex;
+  height: 92vh;
+  position: relative;
+
+}
+
+.sub_menu {
+  width: 380px;
+
+
+
+}
+
+.sub_menu_top {
+  text-align: left;
+  padding: 3rem 2rem;
+  font-weight: 700;
+  width: 380px;
+
+}
+
+.sub_menu_top h2 {
+  font-size: 36px;
+  width: 100%;
+
+
+}
+
+.sub_menu_top p {
+  font-size: 36px;
+  width: 100%;
+
+}
+
+
+.sub_menu_bop {
+  border-top: 1px solid #eee;
+  max-height: 80%;
+  /* 원하는 높이 설정 */
+  overflow-y: auto;
+  /* 수직 방향으로 스크롤 허용 */
+}
+
+
+.sub_menu_bop li {
+  line-height: 2rem;
+  padding: 2rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.sub_menu_bop li h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sub_menu_bop li p {
+  font-size: 16px;
+  color: #ACACAC;
+}
+
+.sub_map {
+
+  width: 100%;
+}
