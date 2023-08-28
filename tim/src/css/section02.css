@@ -1,0 +1,115 @@
+.Section02 {
+  margin: 9rem auto;
+  position: relative;
+}
+.Section02 .title {
+  text-align: center;
+  font-size: var(--titleSize);
+  font-weight: var(--titleWeight);
+  margin: 5rem 0;
+  position: relative;
+}
+.Section02 .title .titleSticker {
+  position: absolute;
+  right: 20%;
+  top: -18%;
+}
+.Section02 .title .line {
+  display: block;
+  background-color: var(--deepPointColor);
+  width: 2px;
+  height: 200px;
+  margin: 5rem auto;
+}
+.sectionBox {
+  display: flex;
+  justify-content: space-around;
+  margin: 15rem 0;
+}
+.sectionBox2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 15rem 0;
+}
+.Section02 .imgBox {
+  position: relative;
+  height: 100%;
+}
+
+.Section02 .imgBox h2 {
+  -webkit-text-stroke: 2px var(--pointColor);
+  color: white;
+  font-size: 5rem;
+  font-weight: var(--titleWeight);
+  position: absolute;
+  transform: translateY(-100%);
+  right: 0;
+}
+.Section02 .imgBox .imgBoxCon img {
+  border-radius: 90px 0 90px 0;
+}
+.Section02 .imgBox .sticker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(60%);
+}
+.Section02 .imgBox .sticker2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-60%);
+}
+.Section02 .textBox {
+  transform: translateY(25%);
+}
+.Section02 .textBox h2 {
+  font-size: var(--pointSize);
+  line-height: 1.5;
+  font-weight: 700;
+}
+.Section02 .textBox p {
+  font-size: var(--middleSize);
+  line-height: 2;
+  margin: 2.5rem 0;
+  letter-spacing: 1px;
+}
+.Section02 .textBox button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: 1px solid var(--fontColorSub02);
+  background-color: white;
+  color: var(--fontColorSub01);
+  cursor: pointer;
+}
+@media (max-width: 1300px) {
+  .Section02 {
+    width: 100%;
+  }
+  .Section02 .title {
+    font-size: 1.8rem;
+  }
+  .Section02 .title .titleSticker {
+    display: none;
+  }
+  .sectionBox {
+    flex-direction: column;
+    justify-content: center;
+    margin: 15rem 3rem;
+  }
+  .Section02 .imgBox h2 {
+    left: 60%;
+  }
+  .Section02 .imgBox .imgBoxCon img {
+    height: 500px;
+  }
+  .Section02 .imgBox .sticker {
+    display: none;
+  }
+  .Section02 .sectionBox2 {
+    flex-direction: column-reverse;
+    justify-content: right;
+    text-align: right;
+    margin: 0 3rem;
+  }
+}

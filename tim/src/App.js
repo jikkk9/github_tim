@@ -4,11 +4,13 @@ import "./css/section04.css";
 import "./css/section04_List.css";
 import "./css/section05.css";
 import "./css/section03.css";
+import "./css/section02.css";
 import "./css/section06.css";
 import "./css/section07.css";
 import "./css/footer.css";
 import "./css/header.css";
 import "./css/NaverMap.css";
+import "./css/root.css";
 
 import {
   Routes,
