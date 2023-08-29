@@ -26,7 +26,7 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <nav className="menu">
+        <nav className="menu mobile">
           <ul>
             <li><a href="#home">소개</a></li>
             <li><a href="#about">위치안내</a></li>

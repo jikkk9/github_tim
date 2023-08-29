@@ -26,7 +26,7 @@ function Section04_List({ data, selectedCategory }) {
 
               <h2>{item.title}</h2>
               <p>{item.subTitle}</p>
-              <p>{item.price}(단위)</p>
+              <p>{item.price}</p>
               <p>{item.test1}</p>
 
 
