@@ -1,13 +1,24 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Section02() {
-  const stickerRef = useRef(null);
-  const [stickerScroll, setStickerScroll] = useState(0);
-  const [scrollActive, setScrollActive] = useState(false);
-  function logit() {
-    setStickerScroll(stickerRef.current.scrollTop);
-  }
+  const stickerRef1 = useRef(null);
+  const stickerRef2 = useRef(null);
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const imgStyle = {
+    transform: `translateY(${-scrollY * 0.1}px)`,
+    transition: "transform 0.3s"
+  };
+
   return (
     <div className="Section02 inner">
       <div className="title">
@@ -22,8 +33,8 @@ function Section02() {
         <div className="sectionBox box01">
           <div className="imgBox">
             <h2>01</h2>
-            <span className="sticker" ref={stickerRef}>
-              <img src="/img/section02/icon1.png" alt="" />
+            <span className="sticker" ref={stickerRef1}>
+              <img style={imgStyle} src="/img/section02/icon1.png" alt="" />
             </span>
             <div className="imgBoxCon">
               <img src="/img/section02/boxImg2.png" alt="" />
@@ -53,8 +64,8 @@ function Section02() {
           </div>
           <div className="imgBox">
             <h2>02</h2>
-            <span className="sticker2" ref={stickerRef}>
-              <img src="/img/section02/icon2.png" alt="" />
+            <span className="sticker2" ref={stickerRef2}>
+              <img style={imgStyle} src="/img/section02/icon2.png" alt="" />
             </span>
             <div className="imgBoxCon">
               <img src="/img/section02/boxImg1.png" alt="" />

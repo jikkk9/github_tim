@@ -9,7 +9,8 @@ const Header = () => {
     <header>
       <div className="Header">
         <h1>
-          Onbiz Office</h1>
+          <Link to="/">Onbiz Office</Link>
+        </h1>
         <nav className="menu pc">
           <ul>
             <li><Link to="/">소개</Link></li>
