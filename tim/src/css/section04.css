@@ -1,22 +1,18 @@
 .Section04 {
-
   display: flex;
   justify-content: space-between;
   position: relative;
-
 }
 
 .Section04 .left {
   width: 38.46%;
   /* border: 1px solid #ddd; */
   text-align: center;
-  font-size: 36px;
+  font-size: var(--subTitleSize);
+  font-family: "S-CoreDream-3Light";
   font-weight: bold;
   /* position: relative; */
-
 }
-
-
 
 /* IE */
 select::-ms-expand {
@@ -35,7 +31,8 @@ select::-ms-expand {
   background: transparent;
   width: 100%;
   padding-right: 25px;
-  font-size: 32px;
+  font-size: var(--subTitleSize);
+  font-family: "S-CoreDream-3Light";
   color: #fff;
   background-color: #3f3f3f;
   border-radius: 10px;
@@ -57,22 +54,20 @@ select::-ms-expand {
   pointer-events: none;
 }
 
-.select:focus+.select-wrapper::before {
+.select:focus + .select-wrapper::before {
   border-top: none;
   /* 위쪽 화살표 없애기 */
   border-bottom: 8px solid black;
   /* 아래쪽 화살표 생성 */
 }
 
-
 .Section04 .left .select option {
   background: black;
   color: #fff;
   padding: 3px 0;
-  font-size: 16px;
+  font-size: var(--baseSize);
   border-radius: 10px;
 }
-
 
 .Section04 .left span {
   display: block;
@@ -89,7 +84,6 @@ select::-ms-expand {
 .Section04 .left img {
   width: 100%;
 }
-
 
 .Section04 .left div {
   display: flex;
@@ -114,11 +108,12 @@ select::-ms-expand {
 }
 
 .Section04 .right span {
-  border: 1px solid #000;
-  padding: 0.3rem;
-  margin: 30px;
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  border: 1px solid var(--fontColorSub02);
+  background-color: white;
+  color: var(--fontColorSub01);
   cursor: pointer;
-
 }
 
 @keyframes moveRight {
@@ -132,11 +127,9 @@ select::-ms-expand {
   }
 }
 
-
 @media (max-width: 1300px) {
   .Section04 {
     width: 100%;
-
   }
 
   .Section04 .left {
@@ -146,7 +139,6 @@ select::-ms-expand {
     font-size: 36px;
     font-weight: bold;
     /* position: relative; */
-
   }
 
   .Section04 .left span {
@@ -179,14 +171,14 @@ select::-ms-expand {
 
   .Section04 .left {
     width: 100%;
-
   }
 
   .Section04 .right {
     width: 100%;
   }
 
-  .Section04_List_UL {}
+  .Section04_List_UL {
+  }
 
   .Section04 .left span {
     top: 75%;
@@ -206,10 +198,6 @@ select::-ms-expand {
       /* 원하는 최종 위치로 조정 가능합니다. */
     }
   }
-
-
-
-
 }
 
 @media (max-width: 500px) {
@@ -219,8 +207,6 @@ select::-ms-expand {
     justify-content: center;
     /* width: 100%; */
   }
-
-
 
   .Section04 .left span {
     top: 86%;
@@ -240,12 +226,7 @@ select::-ms-expand {
       /* 원하는 최종 위치로 조정 가능합니다. */
     }
   }
-
-
 }
-
-
-
 
 /*  
 

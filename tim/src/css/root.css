@@ -7,12 +7,12 @@
   --fontColorSub01: #646464;
   --fontColorSub02: #b1b1b1;
   /* size */
-  --titleSize: 3.75rem;
-  --subTitleSize: 2.5rem;
-  --pointSize: 2.25rem;
-  --bigSize: 1.5rem;
-  --middleSize: 1.25rem;
-  --baseSize: 1rem;
+  --titleSize: 3.75rem; /* 60px */
+  --subTitleSize: 2.5rem; /* 40px */
+  --pointSize: 2.25rem; /* 36px */
+  --bigSize: 1.5rem; /* 24px */
+  --middleSize: 1.25rem; /* 20px */
+  --baseSize: 1rem; /* 16px - 기본 */
   /* weight */
   --titleWeight: 700;
   --middleWeight: 500;

@@ -3,10 +3,10 @@
   font-size: 50px;
   font-weight: 600;
   margin: 5rem;
-
 }
-
 .Section05_H2 b {
+  font-size: var(--subTitleSize);
+  font-family: "S-CoreDream-3Light";
   position: relative;
 }
 
@@ -16,7 +16,7 @@
   bottom: -20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-bottom: 4px solid #73ADFF;
+  border-bottom: 4px solid var(--pointColor);
   width: 100%;
 }
 
@@ -29,7 +29,7 @@
   margin-bottom: 10rem;
 }
 
-.Section05>div {
+.Section05 > div {
   /* 각 아이템의 스타일을 여기에 작성할 수 있습니다. */
   display: flex;
   flex-direction: column;
@@ -56,6 +56,9 @@ img.gifImage {
 
 .Section05 div:hover img.gifImage {
   display: block;
+}
+.Section05 h3 {
+  font-size: var(--middleSize);
 }
 
 @keyframes slide {
@@ -91,7 +94,6 @@ img.gifImage {
 }
 
 @media (max-width: 1300px) {
-
   .Section05 {
     display: grid;
     width: 100%;
@@ -102,7 +104,7 @@ img.gifImage {
     margin-bottom: 10rem;
   }
 
-  .Section05>div {
+  .Section05 > div {
     /* 각 아이템의 스타일을 여기에 작성할 수 있습니다. */
     display: flex;
     flex-direction: column;
@@ -111,11 +113,9 @@ img.gifImage {
     /* 중앙 정렬을 위한 설정입니다. */
     cursor: pointer;
   }
-
 }
 
 @media (max-width: 1000px) {
-
   .Section05 {
     display: grid;
     width: 100%;
@@ -125,6 +125,4 @@ img.gifImage {
     /* 그리드 아이템 간의 간격을 설정합니다. */
     margin-bottom: 10rem;
   }
-
-
 }

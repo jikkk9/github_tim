@@ -1,11 +1,8 @@
-
-
 .Footer {
-  background-color: #23282C;
-  color: #6D757C;
+  background-color: #23282c;
+  color: var(--fontColorSub01);
   display: flex;
   flex-direction: column;
-
 }
 
 .Footer .top span {
@@ -22,10 +19,11 @@
   left: 100%;
   height: 100%;
   width: 2px;
-  background-color: #6D757C;
+  background-color: #6d757c;
 }
 
-.Footer .bot {}
+.Footer .bot {
+}
 
 .Footer .bot ul {
   display: flex;
@@ -34,30 +32,30 @@
   justify-content: space-between;
 }
 
-.Footer .bot ul li {}
+.Footer .bot ul li {
+}
 
 .Footer .bot ul li div {
   display: flex;
-
 }
 
 .Footer .bot ul li div h2 {
   padding-right: 1rem;
-  font-size: 32px;
+  font-size: var(--pointSize);
   line-height: 32px;
   font-weight: bold;
 }
 
 .Footer .bot ul li div p {
-  font-size: 24px;
+  font-size: var(--bigSize);
   line-height: 32px;
 }
 
-.Footer .bot ul li>p {
+.Footer .bot ul li > p {
   line-height: 2rem;
 }
 
-.Footer .bot ul li>p:nth-of-type(1) {
+.Footer .bot ul li > p:nth-of-type(1) {
   margin-top: 1rem;
 }
 
@@ -75,4 +73,5 @@
   }
 }
 
-@media (max-width: 1000px) {}
+@media (max-width: 1000px) {
+}

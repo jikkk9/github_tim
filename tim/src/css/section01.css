@@ -4,7 +4,7 @@
 }
 .Section01 .mySwiper h2 {
   position: absolute;
-  font-size: 3rem;
+  font-size: var(--titleSize);
   top: 35%;
   left: 15%;
   z-index: 5;
@@ -31,4 +31,9 @@
     rgba(0, 0, 0, 0.281),
     rgba(255, 255, 255, 0)
   );
+}
+@media (max-width: 1300px) {
+  .Section01 .mySwiper h2 {
+    font-size: var(--subTitleSize);
+  }
 }

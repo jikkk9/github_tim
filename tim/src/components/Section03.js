@@ -2,7 +2,7 @@ import React from "react";
 
 function Section03() {
   return (
-    <div className="Section03 inner">
+    <div className="Section03">
       <div className="boxWrap">
         <div className="box box01">
           <div className="boxText">
