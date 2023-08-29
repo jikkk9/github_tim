@@ -82,15 +82,15 @@
 .Section02 .textBox h2 {
   font-family: "S-CoreDream-3Light";
   font-size: var(--pointSize);
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 .Section02 .textBox p {
   font-size: var(--middleSize);
-  line-height: 2;
+  line-height: 1.3;
   margin: 2.5rem 0;
-  letter-spacing: 1px;
+  letter-spacing: -0.2px;
 }
 
 .Section02 .textBox button {
@@ -100,17 +100,24 @@
   background-color: white;
   color: var(--fontColorSub01);
   cursor: pointer;
+  transition: 0.3s;
 }
-
+.Section02 .textBox button:hover {
+  background-color: var(--pointColor);
+  color: white;
+  border-color: var(--pointColor);
+}
 @media (max-width: 1300px) {
   .Section02 {
     width: 100%;
   }
 
   .Section02 .title {
-    font-size: 1.8rem;
+    font-size: var(--pointSize);
   }
-
+  .Section02 .title h2:nth-of-type(2) {
+    margin-top: 0;
+  }
   .Section02 .title .titleSticker {
     display: none;
   }
@@ -127,10 +134,6 @@
 
   .Section02 .imgBox .imgBoxCon img {
     height: 500px;
-  }
-
-  .Section02 .imgBox .sticker {
-    display: none;
   }
 
   .Section02 .sectionBox2 {

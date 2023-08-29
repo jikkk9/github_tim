@@ -1,3 +1,6 @@
+.Section07 {
+  margin-bottom: 5rem;
+}
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -37,7 +40,6 @@
 .logos3:before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-
 }
 
 .logos1:after,
@@ -45,7 +47,6 @@
 .logos3:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-
 }
 
 /* .logos1:hover .logos-slide,
@@ -68,7 +69,6 @@
   display: inline-block;
   animation: 50s slide infinite linear;
 }
-
 
 .logos-slide1 img,
 .logos-slide2 img,

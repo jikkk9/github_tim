@@ -1,6 +1,3 @@
-.Section04_List {
-}
-
 .Section04_List_UL {
   display: flex;
   flex-wrap: wrap;
@@ -14,10 +11,15 @@
   border-radius: 1rem;
 }
 
+.Section04_List .list {
+  line-height: 1.4;
+}
+
 .Section04_List .list b {
   display: block;
   width: 245px;
   height: 245px;
+  margin-bottom: 10px;
 }
 
 .Section04_List .list img {
@@ -52,4 +54,11 @@
 .Section04_List div p:nth-of-type(1) {
   background-color: red;
   color: #fff;
+}
+
+.Section04_List .listSubTitle {
+  color: var(--fontColorSub01);
+}
+.Section04_List .listPrice {
+  color: var(--pointColor);
 }

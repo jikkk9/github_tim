@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: 5rem;
 }
 
 .Section04 .left {
@@ -114,6 +115,12 @@ select::-ms-expand {
   background-color: white;
   color: var(--fontColorSub01);
   cursor: pointer;
+  transition: 0.3s;
+}
+.Section04 .right span:hover {
+  background-color: var(--pointColor);
+  color: white;
+  border-color: var(--pointColor);
 }
 
 @keyframes moveRight {
@@ -175,9 +182,6 @@ select::-ms-expand {
 
   .Section04 .right {
     width: 100%;
-  }
-
-  .Section04_List_UL {
   }
 
   .Section04 .left span {
