@@ -11,6 +11,7 @@ import "./css/footer.css";
 import "./css/header.css";
 import "./css/NaverMap.css";
 import "./css/root.css";
+import "./css/Onbiz_service.css";
 
 import {
   Routes,
@@ -35,6 +36,7 @@ import Section05 from "./components/Section05";
 import Section06 from "./components/Section06";
 import Section07 from "./components/Section07";
 import NaverMap from "./components/NaverMap";
+import Onbiz_service from "./components/Onbiz_service";
 
 function CombinedSections({ data, data05 }) {
   return (
@@ -65,6 +67,7 @@ function App() {
           </>
         } />
         <Route path="/about" element={<NaverMap />} />
+        <Route path="/Contact" element={<Onbiz_service />} />
       </Routes>
       <Footer />
 

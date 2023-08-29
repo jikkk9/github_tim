@@ -1,0 +1,47 @@
+.Onbiz_service {}
+
+.Onbiz_service .img_box {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.Onbiz_service .img_box img {
+  width: 100%;
+}
+
+.Onbiz_service_box {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Onbiz_service_box h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.Onbiz_service_box ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.Onbiz_list {}
+
+.Onbiz_list li {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 30px 10px 10px 10px;
+  line-height: 2;
+}
+
+.Onbiz_list li .Onbiz_number {
+  background-color: #E5FAFF;
+  color: #73ADFF;
+  padding: 10px 20px;
+}
+
+.Onbiz_number {}
