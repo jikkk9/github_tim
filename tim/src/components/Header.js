@@ -28,10 +28,10 @@ const Header = () => {
       {isOpen && (
         <nav className="menu mobile">
           <ul>
-            <li><a href="#home">소개</a></li>
-            <li><a href="#about">위치안내</a></li>
-            <li><a href="#services">예약안내</a></li>
-            <li><a href="#contact">온비즈 서비스</a></li>
+            <li><Link to="/">소개</Link></li>
+            <li><Link to="/about">위치안내</Link></li>
+            <li><Link to="/Services">예약안내</Link></li>
+            <li><Link to="/Contact">온비즈 서비스</Link></li>
           </ul>
         </nav>
       )}

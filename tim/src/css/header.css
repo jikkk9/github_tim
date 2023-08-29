@@ -41,9 +41,15 @@
 .menu.pc ul li a {
   text-decoration: none;
   padding: 1rem;
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 9da1b31 (add [20230829] 번경전)
   color: var(--fontColor);
+  position: relative;
+  box-sizing: border-box;
 }
+<<<<<<< HEAD
 .menu.pc ul li a::before {
   content: "";
   position: absolute;
@@ -58,6 +64,30 @@
 .menu.pc ul li:hover a::before {
   width: 100%;
 }
+=======
+
+.menu.pc ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  /* 이 부분을 추가합니다 */
+  width: 0%;
+  /* width를 100%로 변경합니다 */
+  border-bottom: 3px solid #000;
+  transition: 0.4s;
+}
+
+.menu.pc ul li:hover a::before {
+  /* height: 2px; */
+  width: 100%;
+  /* hover 상태에서의 height를 2px로 변경합니다 */
+}
+
+
+
+>>>>>>> 9da1b31 (add [20230829] 번경전)
 /* 모바일 화면에서만 메뉴 버튼을 보이게 하기 위한 코드 */
 @media screen and (max-width: 768px) {
   .menu.pc {
