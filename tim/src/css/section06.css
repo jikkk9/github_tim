@@ -74,7 +74,13 @@
     width: 100%;
     padding: 2rem 0;
   }
+
+  .swiper_Box {
+    position: relative;
+    width: 200px;
+    margin: 5rem auto;
+    bottom: 60px;
+  }
 }
 
-@media (max-width: 1000px) {
-}
+@media (max-width: 1000px) {}

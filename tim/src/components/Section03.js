@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function Section03() {
   return (
@@ -9,8 +11,11 @@ function Section03() {
             <h4>Office</h4>
             <h3>사무실</h3>
           </div>
+
           <div className="boxImg">
-            <img src="/img/section03/samu.png" alt="" />
+            <Link to="/Contact">
+              <img src="/img/section03/samu.png" alt="" />
+            </Link>
           </div>
         </div>
         <div className="box box02">

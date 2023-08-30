@@ -69,3 +69,64 @@
 
   width: 100%;
 }
+
+.only-map .sub_menu {
+  display: none;
+}
+
+.only-map .sub_map {
+  width: 100vw;
+  /* 전체 화면 너비로 설정 */
+  height: 100vh;
+  /* 전체 화면 높이로 설정 */
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  /* 다른 요소 위에 나타나게 하기 위해 */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* 약간 투명한 흰색 배경 */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* 약간의 그림자 효과 */
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  /* 호버 시 배경색을 덜 투명하게 */
+}
+
+.NaverMap.active~.footer {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .NaverMap {
+    flex-direction: column;
+  }
+
+  .sub_menu {
+    width: 100% !important;
+  }
+
+  .sub_menu_top {
+    width: 100% !important;
+  }
+
+  .sub_menu_bop {
+    width: 100% !important;
+  }
+
+  .sub_menu_bop ul {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+
+}

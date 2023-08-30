@@ -45,3 +45,71 @@
 }
 
 .Onbiz_number {}
+
+@media (max-width: 1300px) {
+  .Onbiz_service {}
+
+  .Onbiz_service .img_box {
+    width: 100%;
+  }
+
+
+  .Onbiz_service_box {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .Onbiz_service_box h2 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .Onbiz_service_box {
+    width: 100%;
+
+  }
+
+  .Onbiz_service_box ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* 아이템들을 왼쪽으로 정렬 */
+    gap: 20px;
+    text-align: center;
+    /* 아이템들 사이의 간격 */
+  }
+
+  .Onbiz_service_box ul li {}
+
+
+
+
+
+  .Onbiz_service_box ul li {}
+
+  .Onbiz_list {}
+
+  .Onbiz_list li {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 30px 10px 10px 10px;
+    line-height: 2;
+  }
+
+  .Onbiz_list li .Onbiz_number {
+    background-color: #E5FAFF;
+    color: #73ADFF;
+    padding: 10px 20px;
+  }
+
+  .Onbiz_number {}
+
+}
+
+
+@media (max-width: 500px) {
+  .Onbiz_service_box h2 {
+    text-align: center;
+  }
+}

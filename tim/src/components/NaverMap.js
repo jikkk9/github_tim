@@ -10,12 +10,23 @@ const locations = [
 ];
 
 function NaverMap() {
+
   const mapRef = useRef(null);
   const markersRef = useRef([]);
   const infowindowsRef = useRef([]);
   const [mapInstance, setMapInstance] = useState(null);
   const [showSubpage, setShowSubpage] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState(null);
+  const [showOnlyMap, setShowOnlyMap] = useState(false);
+  const [centerChanged, setCenterChanged] = useState(false);
+  useEffect(() => {
+    if (showOnlyMap && window.naver && window.naver.maps && mapRef.current && mapInstance) {
+      window.naver.maps.Event.trigger(mapInstance, 'resize');
+      if (!centerChanged) {  // centerChanged가 false일 때만 중심을 변경
+        mapInstance.setCenter(new window.naver.maps.LatLng(37.5665, 126.9780));
+      }
+    }
+  }, [showOnlyMap, mapInstance, centerChanged]);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -58,10 +69,13 @@ function NaverMap() {
 
   const moveToLocation = (lat, lng) => {
     if (!mapInstance) return;
-
+    // setShowOnlyMap(true); // 여기에 추가
     const center = new window.naver.maps.LatLng(lat, lng);
     mapInstance.setCenter(center);
     mapInstance.setZoom(15);
+    setShowOnlyMap(true);
+    setCenterChanged(true);  // 중심이 변경되었음을 표시
+
   };
 
   const handleLocationClick = (location) => {
@@ -80,8 +94,13 @@ function NaverMap() {
     setShowSubpage(false);
   };
 
+  const handleBackClick = () => {
+    setShowOnlyMap(false);
+  };
+
   return (
-    <div className='NaverMap'>
+    <div className={`NaverMap ${showOnlyMap ? 'only-map' : ''}`}>
+      {showOnlyMap && <button className="back-button" onClick={handleBackClick}>뒤로 가기</button>}
       <div className='sub_menu'>
         <div className='sub_menu_top'>
           <h2>온비즈 오피스</h2>
@@ -100,10 +119,11 @@ function NaverMap() {
       </div>
 
 
-
-
       <div className='sub_map' id="map" ref={mapRef} />
     </div>
+
+
+
   );
 }
 

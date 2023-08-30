@@ -1,6 +1,13 @@
 import React from 'react'
-
+import { useLocation } from 'react-router-dom';
 function Footer() {
+  const location = useLocation();
+
+  // /about 경로인 경우 푸터를 숨김
+  if (location.pathname === '/about') {
+    return null;
+  }
+
   return (
     <div className='Footer'>
       <div className='top  inner'>
