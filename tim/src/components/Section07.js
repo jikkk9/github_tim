@@ -1,17 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 function Section07() {
   useEffect(() => {
-    var copy1 = document.querySelector('.logos-slide1').cloneNode(true);
+    var copy1 = document.querySelector(".logos-slide1").cloneNode(true);
     document.querySelector(".logos1").appendChild(copy1);
 
-    var copy2 = document.querySelector('.logos-slide2').cloneNode(true);
+    var copy2 = document.querySelector(".logos-slide2").cloneNode(true);
     document.querySelector(".logos2").appendChild(copy2);
 
-    var copy3 = document.querySelector('.logos-slide3').cloneNode(true);
+    var copy3 = document.querySelector(".logos-slide3").cloneNode(true);
     document.querySelector(".logos3").appendChild(copy3);
   }, []);
-
 
   const images = [
     "/img/section07/image (1).png",
@@ -52,9 +51,8 @@ function Section07() {
     "/img/section07/image (30).png",
   ];
 
-
   return (
-    <div className='Section07'>
+    <div className="Section07">
       <div className="logos1">
         <div className="logos-slide1">
           {images.map((img, index) => (
@@ -94,7 +92,7 @@ function Section07() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Section07;

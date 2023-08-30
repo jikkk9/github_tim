@@ -142,4 +142,14 @@
     text-align: right;
     margin: 0 3rem;
   }
+  .Section02 .imgBox .sticker {
+    transform: translateX(40%);
+  }
+
+  .Section02 .imgBox .sticker2 {
+    position: absolute;
+    bottom: -350px;
+    left: 0;
+    transform: translateX(-60%);
+  }
 }

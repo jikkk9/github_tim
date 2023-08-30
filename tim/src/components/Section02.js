@@ -16,7 +16,7 @@ function Section02() {
 
   const imgStyle = {
     transform: `translateY(${-scrollY * 0.1}px)`,
-    transition: "transform 0.3s"
+    transition: "transform 0.3s",
   };
 
   return (
@@ -42,11 +42,11 @@ function Section02() {
           </div>
           <div className="textBox">
             <h2>
-              비상주 오피스에 <br /> 관한 텍스트 첨부
+              사업자 등록을 위한, <br /> 비상주 사무실
             </h2>
             <p>
-              비상주 오피스에 관한 설명을 첨부합니다. <br />
-              관련된 가벼운 설명을 합니다
+              온비즈 오피스의 비상주 사무실은 <br />
+              사업자등록을 위한 주소를 제공합니다.
             </p>
             <button>자세히 보기</button>
           </div>
@@ -54,11 +54,12 @@ function Section02() {
         <div className="sectionBox2 box02">
           <div className="textBox">
             <h2>
-              상주 오피스에 <br /> 관한 텍스트 첨부
+              쾌적한 업무환경, <br /> 상주 사무실
             </h2>
             <p>
-              상주 오피스에 관한 설명을 첨부합니다. <br />
-              관련된 가벼운 설명을 합니다
+              보증금, 관리비, 기장계약 부담 없이
+              <br />
+              업무 환경에 따라 입주 가능한 사무실.
             </p>
             <button>자세히 보기</button>
           </div>

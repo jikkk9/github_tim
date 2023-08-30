@@ -1,27 +1,29 @@
-import React, { useState } from 'react';
-import Section04_List from './Section04_List';
+import React, { useState } from "react";
+import Section04_List from "./Section04_List";
 
 function Section04({ data }) {
-  const [dataList, setDataList] = useState(data.filter(item => item.category === 'retiringroom'));
+  const [dataList, setDataList] = useState(
+    data.filter((item) => item.category === "retiringroom")
+  );
 
-  const [selectedCategory, setSelectedCategory] = useState('retiringroom');
+  const [selectedCategory, setSelectedCategory] = useState("retiringroom");
 
   const handleSortChange = (e) => {
     const category = e.target.value;
     setSelectedCategory(category);
 
     switch (category) {
-      case 'meetingroom':
-        setDataList(data.filter(item => item.category === 'meetingroom'));
+      case "meetingroom":
+        setDataList(data.filter((item) => item.category === "meetingroom"));
         break;
-      case 'office':
-        setDataList(data.filter(item => item.category === 'office'));
+      case "office":
+        setDataList(data.filter((item) => item.category === "office"));
         break;
-      case 'retiringroom':
-        setDataList(data.filter(item => item.category === 'retiringroom'));
+      case "retiringroom":
+        setDataList(data.filter((item) => item.category === "retiringroom"));
         break;
-      case 'books':
-        setDataList(data.filter(item => item.category === 'books'));
+      case "books":
+        setDataList(data.filter((item) => item.category === "books"));
         break;
       default:
         setDataList([...data]);
@@ -32,15 +34,16 @@ function Section04({ data }) {
   // 조건부 스타일링을 위한 객체
   const booksStyle = {
     // 다른 스타일 속성 추가 가능
-    objectFit: 'contain',
-    objectPosition: 'left center',
+    objectFit: "contain",
+    objectPosition: "left center",
   };
 
-
   return (
-
-    <div className='Section04 inner' style={selectedCategory === 'books' ? booksStyle : {}}>
-      <div className='left'>
+    <div
+      className="Section04 inner"
+      style={selectedCategory === "books" ? booksStyle : {}}
+    >
+      <div className="left">
         <div>
           <h2>지금 </h2>
 
@@ -60,16 +63,10 @@ function Section04({ data }) {
         <span>
           <img src={`${process.env.PUBLIC_URL}/img/section04_img/bg.png`}></img>
         </span>
-
       </div>
-      <div className='right'>
+      <div className="right">
         <Section04_List data={dataList} selectedCategory={selectedCategory} />
-        <p className='right_p'>
-          <span>더보기 +</span>
-
-        </p>
       </div>
-
     </div>
   );
 }
