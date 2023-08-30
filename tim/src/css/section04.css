@@ -55,7 +55,7 @@ select::-ms-expand {
   pointer-events: none;
 }
 
-.select:focus + .select-wrapper::before {
+.select:focus+.select-wrapper::before {
   border-top: none;
   /* 위쪽 화살표 없애기 */
   border-bottom: 8px solid black;
@@ -74,7 +74,7 @@ select::-ms-expand {
   display: block;
   width: 350px;
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: moveRight 10s infinite;
@@ -104,7 +104,7 @@ select::-ms-expand {
 .Section04 .right_p {
   display: flex;
   justify-content: right;
-  margin: 10rem 0;
+  margin: 1rem 0;
   cursor: pointer;
 }
 
@@ -117,6 +117,7 @@ select::-ms-expand {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .Section04 .right span:hover {
   background-color: var(--pointColor);
   color: white;
