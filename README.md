@@ -32,3 +32,12 @@
 - 멤버 1: 이혜진
 - 멤버 2: 지요현
 
+
+## 피그마 주소
+
+- https://www.figma.com/file/3An0U1Q5ZaNoS9RXtNZZMY/teamProject?type=whiteboard&node-id=0%3A1&t=HXmEtY9ARiU0XUtd-1
+- https://www.figma.com/file/Yr7zB1CT0Fg82EuDCzpjcE/%ED%8C%80%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---Onbiz-Office-%EC%82%AC%EC%9D%B4%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=ZLatEJs2AJIAI00D-1
+
+## 홈페이지 주소
+
+- http://wldygus.dothome.co.kr/
